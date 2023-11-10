@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Hej och välkommen till beräkningsprogrammet.");
             Console.WriteLine("Skriv 'hjälp' för hjälp!");
             string command;
@@ -18,6 +19,14 @@
                     Console.Write("tal 2: ");
                     double Y = double.Parse(Console.ReadLine());
                     Console.WriteLine($"{X} + {Y} = {X + Y}");
+                }
+                else if (command == "gånger")
+                {
+                    Console.Write("tal 1: ");
+                    double X = double.Parse(Console.ReadLine());
+                    Console.Write("tal 2: ");
+                    double Y = double.Parse(Console.ReadLine());
+                    Console.WriteLine($"{X} * {Y} = {X * Y}");
                 }
                 else if (command == "hjälp")
                 {
